@@ -1,0 +1,15 @@
+//crear una base de datos
+use("tienda_store")
+
+//crear la collecion y almenos un documento
+db.producto.insertOne(
+    {
+        name: "celular",
+        precio: 3000,
+        cantidad: 50,
+        color: ["rojo", "verde", "negro"]
+    }
+)
+
+//mostramos el resultado
+db.producto.find()
